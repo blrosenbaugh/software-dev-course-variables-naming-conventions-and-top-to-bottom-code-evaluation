@@ -5,28 +5,38 @@ In this activity, you will reinforce the skill of creating and using variables
 while practicing best practices in variable naming conventions through a hands-on,
 interactive coding challenge.
 
-The code snippet below may include:
-  - Ambiguous or incorrect variable names.
-  - Missing variables that need to be created.
-  - Scenarios that require the use of clear and descriptive variable names.
+  Response-
 
-You will:
-  - Identify Issues: Review the provided code and identify any variable names that:
-  - Are unclear or too vague (e.g., a, b, c).
-  - Do not follow best practices (e.g., camelCase, descriptive naming).
-  - Refactor the Code: Rename the variables and rewrite the program using descriptive names that clearly convey the variable's purpose.
-  - Enhance the Program: Add at least two additional variables to improve the program’s functionality or clarity.
+  This code has ambiguous variable names (e.g., a,b,c and d)
+  These should be more descriptive.
+  Instead of a, I'd use "personName"
+  Instead of b, I'd use "numberOfItems"
+  Instead of c, I'd use "priceOfItem"
+  Instead of d, I'd use "endResult"
 
-Things to reflect on:
-  - Why is it important to use meaningful variable names?
-  - What are the common pitfalls to avoid when naming variables?
-  - How do clear variable names benefit team collaboration?
+  I did not locate any missing variables, only variables that needed better naming.
+
+  To enhance the program, I've added:
+  let currencySymbol = "$"; // Added for flexibility (by geographical location)
+  let totalCost = numberOfItems * priceOfItem; // New variable to calculate total cost
+
+  Reflection-
+
+  It's important to use meaningful variable names so that when collaborating, it improves readabiltiy and is easier to maintain.
+  Common pitfalls to avoid are using inconsistent naming schemes (like not adhering to camelcase). It looks more professional,
+  and again, maintains readability throughout a project. You'll also want to make sure you do not use any numbers leading a variable name.
+  Clear variables benefit a collaboration because it looks nicer, is easier to read, and reduces the need for excessive comments in the code.
+  This can also make it easier to trace errors in code.
+
+  Below, I've added the revised and improved code-
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let personName = "Alice";
+let numberOfItems = 5;
+let priceOfItem = 20;
+let currencySymbol = "$";
+let totalCost = numberOfItems * priceOfItem;
+let endResult = personName + " bought " + numberOfItems + " items for " + currencySymbol + priceOfItem + " each, totaling " + currencySymbol + totalCost + ".";
 
-console.log(d);
+console.log(endResult);
